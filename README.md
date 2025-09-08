@@ -1,12 +1,85 @@
-# React + Vite
+# 📝 To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant To-Do application built with **React**, **Vite**, and **Tailwind CSS**.  
+Tasks are stored in your browser using **localStorage**, so your data stays safe even after refreshing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- ➕ Add new tasks
+- ✅ Mark tasks as complete / incomplete
+- 🗑️ Clear completed tasks
+- 🔄 Filter tasks by **All / Active / Completed**
+- 💾 Persistent storage with `localStorage`
+- ⚡ Fast development setup with **Vite**
+- 🎨 Modern UI styled with **Tailwind CSS**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- [React](https://reactjs.org/) – UI library
+- [Vite](https://vitejs.dev/) – Fast build tool
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/soul-kamal/TO-DO-.git
+cd TO-DO-
+Install dependencies:
+
+bash
+Copy code
+npm install
+Start the development server:
+
+bash
+Copy code
+npm run dev
+📂 Project Structure
+csharp
+Copy code
+TO-DO-
+├── public/              # Static assets
+├── src/
+│   ├── App.jsx          # Main app component
+│   ├── main.jsx         # Entry point
+│   ├── index.css        # Tailwind + global styles
+│   └── components/      # Reusable UI components
+├── package.json
+├── tailwind.config.js   # Tailwind config
+├── postcss.config.js    # PostCSS config
+└── vite.config.js       # Vite config
+🎮 Usage
+Type your task into the input box and hit Add.
+
+Mark tasks complete with the checkbox.
+
+Use filters (All / Active / Completed) to view tasks.
+
+Click Clear completed to remove finished tasks.
+
+📷 Screenshot
+
+📜 License
+This project is licensed under the MIT License.
+
+💡 Future Improvements
+Dark mode toggle 🌙
+
+Edit tasks ✏️
+
+Drag-and-drop reordering 📌
+
+Sync with a backend (Firebase / Node.js API)
+
+👤 Author
+GitHub: @soul-kamal
+
+
+
+
