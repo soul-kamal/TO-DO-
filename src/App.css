@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* 🔆 Logo Styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 0.4s ease, transform 0.4s ease;
+  will-change: filter, transform;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em var(--primary));
+  transform: scale(1.05) rotate(-2deg);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em var(--secondary));
+  transform: scale(1.1) rotate(2deg);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo-spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* 🪟 Glassmorphism Card */
+.card {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* 📄 Docs link */
+.read-the-docs {
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.read-the-docs:hover {
+  color: var(--primary);
+}
+
+/* ✨ Background Blobs */
+#root::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, #f472b6, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+}
+#root::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, #60a5fa, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+}
